@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "hexfuncs",
+  "version": "${version}",
+  "name": "Hexfuncs",
+  "description": "Hexfuncs adds pure multivariate function iotas to hexcasting",
+  "authors": [
+    "sky3n3t"
+  ],
+  "contact": {
+    "homepage": "https://sky3n3t.github.io/hexfuncs",
+    "sources": "https://github.com/sky3n3t/hexfuncs"
+  },
+  "license": "MIT",
+  "icon": "assets/hexfuncs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [{
+      "adapter": "kotlin",
+      "value": "mc.sky3n3t.hexfuncs.fabric.FabricHexfuncs"
+    }],
+    "client": [{
+      "adapter": "kotlin",
+      "value": "mc.sky3n3t.hexfuncs.fabric.FabricHexfuncsClient"
+    }],
+    "modmenu": [{
+      "adapter": "kotlin",
+      "value": "mc.sky3n3t.hexfuncs.fabric.FabricHexfuncsModMenu"
+    }]
+  },
+  "mixins": [
+    "hexfuncs-common.mixins.json",
+    "hexfuncs-fabric.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${versions.minecraft}",
+    "fabricloader": ">=${versions.fabric_loader}",
+    "fabric-api": ">=${versions.fabric_api}",
+    "fabric-language-kotlin": ">=${versions.kotlin_fabric}",
+    "architectury": ">=${versions.architectury}",
+    "hexcasting": ">=${versions.hexcasting_dependency}",
+    "cloth-config": ">=${versions.clothConfig}"
+  },
+  "suggests": {
+    "modmenu": ">=${versions.modMenu}"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hexfuncs: {
+      title: "Hexfuncs Book",
+      description: "Hexfuncs adds pure multivariate function iotas to hexcasting",
+    },
+  }
+}

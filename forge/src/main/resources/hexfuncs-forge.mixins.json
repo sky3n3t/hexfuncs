@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "mc.sky3n3t.hexfuncs.forge.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinDatagenMain"
+  ],
+  "plugin": "mc.sky3n3t.hexfuncs.forge.mixin.ForgeMixinConfigPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
